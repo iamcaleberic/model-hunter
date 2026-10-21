@@ -1,0 +1,32 @@
+[project]
+name = "model-hunter"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Eric Caleb", email = "eric@weaviate.io" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.15.0",
+    "numpy>=2.5.4",
+    "pillow>=13.0.0",
+    "requests>=2.34.2",
+    "torch>=2.14.1",
+    "torchcodec>=0.17.0",
+    "torchvision>=0.29.1",
+    "transformers>=5.20.2",
+]
+
+[project.scripts]
+model-hunter = "model_hunter:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "ruff>=0.17.1",
+]
