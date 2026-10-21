@@ -5,7 +5,6 @@ Models evaluations
 |------|-------|--------------|
 | `src/meta/ijepa.py` | `facebook/ijepa_vith14_1k` | Embeds two COCO images and prints their cosine similarity |
 | `src/meta/vjepa.py` | `facebook/vjepa2-vitl-fpc64-256` | Encodes 64 frames of a Kinetics clip with V-JEPA 2 |
-| `ijepa_similarity.ipynb` | `facebook/ijepa_vith14_1k` | Notebook version of `ijepa.py` |
 
 ## Requirements
 
